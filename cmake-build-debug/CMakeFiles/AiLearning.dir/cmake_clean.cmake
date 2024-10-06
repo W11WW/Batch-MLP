@@ -1,14 +1,12 @@
 file(REMOVE_RECURSE
-  "AiLearning.exe"
-  "AiLearning.exe.manifest"
+  "AiLearning"
   "AiLearning.pdb"
-  "CMakeFiles/AiLearning.dir/Activation.cpp.obj"
-  "CMakeFiles/AiLearning.dir/BatchMLP.cpp.obj"
-  "CMakeFiles/AiLearning.dir/Options.cpp.obj"
-  "CMakeFiles/AiLearning.dir/TSA.cpp.obj"
-  "CMakeFiles/AiLearning.dir/main.cpp.obj"
-  "CMakeFiles/AiLearning.dir/stb.cpp.obj"
-  "libAiLearning.dll.a"
+  "CMakeFiles/AiLearning.dir/BatchMLP.cpp.o"
+  "CMakeFiles/AiLearning.dir/BatchMLP.cpp.o.d"
+  "CMakeFiles/AiLearning.dir/main.cpp.o"
+  "CMakeFiles/AiLearning.dir/main.cpp.o.d"
+  "CMakeFiles/AiLearning.dir/stb.cpp.o"
+  "CMakeFiles/AiLearning.dir/stb.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

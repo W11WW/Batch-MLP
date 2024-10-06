@@ -1,3 +1,1 @@
-"D:\CLion\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\AiLearning.dir/objects.a
-D:\mingw64\bin\ar.exe cr CMakeFiles\AiLearning.dir/objects.a @CMakeFiles\AiLearning.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\AiLearning.dir/objects.a -Wl,--no-whole-archive -o AiLearning.exe -Wl,--out-implib,libAiLearning.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AiLearning.dir\linklibs.rsp
+/usr/bin/c++ -g -arch x86_64 -mmacosx-version-min=13.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/AiLearning.dir/main.cpp.o CMakeFiles/AiLearning.dir/stb.cpp.o CMakeFiles/AiLearning.dir/BatchMLP.cpp.o -o AiLearning 

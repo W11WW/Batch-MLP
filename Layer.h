@@ -6,7 +6,6 @@
 #define AILEARNING_LAYER_H
 #include "Math.h"
 #include "Weight.h"
-#include "Activation.h"
 
 class Layer {
 public:
@@ -14,6 +13,9 @@ public:
     Layer(const std::size_t& layerSize, const std::size_t& weightSize, const float& bias) : m_layerSize(layerSize), m_weightSize(weightSize), m_bias(bias)
     {
         m_weights.resize(layerSize);
+        m_outputs.setSize(layerSize);
+        m_convertedOutputs.setSize(layerSize);
+
         for(auto& weight : m_weights)
         {
             weight.setSize(weightSize);
@@ -29,6 +31,9 @@ public:
     [[nodiscard]] auto& getOutputs() noexcept { return m_outputs; }
     [[nodiscard]] const auto& getOutputs() const noexcept { return m_outputs; }
 
+    [[nodiscard]] auto& getConvertedOutputs() noexcept { return m_convertedOutputs; }
+    [[nodiscard]] const auto& getConvertedOutputs() const noexcept { return m_convertedOutputs; }
+
     [[nodiscard]] const auto& getBias() const noexcept { return m_bias; }
 
 private:
@@ -39,10 +44,8 @@ private:
     // default bias value
     float m_bias = 0.0f;
 
-    // activation function
-    Activation m_activation;
-
     Vector<float> m_outputs;
+    Vector<float> m_convertedOutputs;
 
     std::vector<Weight> m_weights;
 };

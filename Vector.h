@@ -9,7 +9,6 @@
 #include <iostream>
 #include <vector>
 
-namespace Wuu {
     template<typename T>
     class Vector {
     public:
@@ -93,13 +92,15 @@ namespace Wuu {
             return m_values[index];
         }
 
-        Vector<T>& operator=(const Vector<T>& other)
+        Vector<T>& operator=(const Vector<T> other)
         {
             if(this == &other)
                 return *this;
 
             m_values.resize(other.m_values.size());
             m_values = other.m_values;
+
+            return *this;
         }
 
     private:
@@ -107,6 +108,5 @@ namespace Wuu {
         container m_values;
 
     };
-}
 
 #endif //AILEARNING_VECTOR_H

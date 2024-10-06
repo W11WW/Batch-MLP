@@ -7,8 +7,6 @@
 
 #include "Vector.h"
 
-using namespace Wuu;
-
 class UnequalVectorLength : public std::exception {
 public:
     explicit UnequalVectorLength(char* operation) : m_message(operation) {}
